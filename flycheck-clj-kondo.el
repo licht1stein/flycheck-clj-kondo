@@ -11,7 +11,7 @@
 ;; Package-Requires: ((emacs "26.1") (flycheck "34"))
 
 ;;; Commentary:
-
+n
 ;; This package integrates clj-kondo with Emacs via flycheck.  To use it, add to
 ;; your init.el:
 
@@ -63,7 +63,7 @@ Argument EXTRA-ARGS: passes extra args to the checker."
      "See https://github.com/borkdude/clj-kondo"
      :command ("clj-kondo"
                "--lint" "-"
-               "--lang" (eval (or flycheck-clj-kondo-lang ,lang))
+	       ;; "--lang" (eval (or flycheck-clj-kondo-lang ,lang))
                "--filename" (eval (buffer-file-name))
                ,@extra-args)
      :standard-input t
