@@ -11,7 +11,6 @@
 ;; Package-Requires: ((emacs "26.1") (flycheck "34"))
 
 ;;; Commentary:
-n
 ;; This package integrates clj-kondo with Emacs via flycheck.  To use it, add to
 ;; your init.el:
 
